@@ -12,6 +12,7 @@ class Solution:
       return a[0] - b[0]
     
     intervals = sorted(intervals, key=cmp_to_key(compare))
+    print(intervals)
     ans = []
     ans.append(intervals[0])
     for i in range(1, len(intervals)):
@@ -27,5 +28,5 @@ class Solution:
     return ans
 
     
-intervals = [[1,4],[2,3]]
+intervals = [[1,7],[1,3],[2,6],[8,10],[15,18]]
 Solution().merge(intervals)

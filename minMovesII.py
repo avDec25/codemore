@@ -10,4 +10,4 @@ class Solution:
     return ans
 
 nums = [1,2,3]
-Solution().minMoves2(nums)
+print(Solution().minMoves2(nums))
