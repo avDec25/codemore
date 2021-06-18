@@ -19,8 +19,7 @@ def constructArray(n, k):
     ans[i] = i
   
   return ans
- 
- 
+
 n = 5
 k = 4
 print(constructArray(n, k))

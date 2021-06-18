@@ -1,13 +1,13 @@
 from typing import List
 import collections
 
+
 class Solution:
-  def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+  def GroupAnagrams(self, strs: List[str]) -> List[List[str]]:
     sol = []
     mp = collections.defaultdict(set)
-    for i,s in enumerate(strs):
-      mp[''.join(sorted(s))].add(i)
-      
+    for i, s in enumerate(strs):
+      mp["".join(sorted(s))].add(i)
     for key in mp.keys():
       indexes = mp.get(key)
       ans = []
@@ -17,13 +17,5 @@ class Solution:
     return sol
 
 
-strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
-print(Solution().groupAnagrams(strs))
-
-
-d = {}
-for w in sorted(strs):  
-  key = tuple(sorted(w))
-  d[key] = d.get(key, []) + [w]
-
-print(list(d.values()))
+data = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(Solution().groupAnagrams(data))
