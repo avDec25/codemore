@@ -1,7 +1,7 @@
 {
   // The number of spaces a tab is equal to. This setting is overridden
   // based on the file contents when `editor.detectIndentation` is true.
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
 
   // Insert spaces when pressing Tab. This setting is overriden
   // based on the file contents when `editor.detectIndentation` is true.
@@ -16,7 +16,7 @@
   "python.linting.pylintPath": "pylint",
   "editor.formatOnSave": true,
   "python.formatting.provider": "yapf",
-  "python.formatting.yapfArgs": ["--style", "{based_on_style: chromium, indent_width: 2}"],
+  "python.formatting.yapfArgs": ["--style", "{based_on_style: chromium, indent_width: 4}"],
   "python.linting.pylintEnabled": true,
   "editor.minimap.maxColumn": 80
 }
