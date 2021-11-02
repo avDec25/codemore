@@ -16,7 +16,7 @@ class Solution:
     return res + [' '.join(cur).ljust(maxWidth)]
 
 
-words = ["This", "is", "an", "example", "of", "text", "justification.", "If I add more ", "data into this", "then."]
+words = ["This", "is", "an", "example", "of", "text", "justification.", "If", "I", "add", "more", "data", "into", "this", "then."]
 maxWidth = 16
 for line in Solution().fullJustify(words, maxWidth):
   print(line)

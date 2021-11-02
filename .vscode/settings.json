@@ -15,8 +15,33 @@
   "python.linting.enabled": true,
   "python.linting.pylintPath": "pylint",
   "editor.formatOnSave": true,
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfArgs": ["--style", "{based_on_style: chromium, indent_width: 2}"],
+  "python.formatting.provider": "autopep8",
+  //   "python.formatting.yapfArgs": [
+  //     "--style",
+  //     "{based_on_style: chromium, indent_width: 8}"
+  //   ],
   "python.linting.pylintEnabled": true,
-  "editor.minimap.maxColumn": 80
+  "editor.minimap.maxColumn": 80,
+  "python.languageServer": "Default",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "editor.formatOnPaste": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  //   for disabling suggestions
+//   "editor.acceptSuggestionOnCommitCharacter": false,
+//   "editor.acceptSuggestionOnEnter": "off",
+//   "editor.hover.enabled": false,
+//   "editor.minimap.enabled": false,
+//   "editor.parameterHints.enabled": false,
+//   "editor.quickSuggestions": false,
+//   "editor.quickSuggestionsDelay": 10,
+//   "editor.suggest.snippetsPreventQuickSuggestions": false,
+//   "editor.suggestOnTriggerCharacters": false,
+//   "editor.wordBasedSuggestions": false
 }

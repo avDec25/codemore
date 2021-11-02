@@ -10,7 +10,7 @@ class Solution:
         e0 = 1
         e1 = 0
         e2 = 0
-        inspect(s)
+        # inspect(s)
         for c in s:
             if c == '*':
                 f0 = 9*e0 + 9*e1 + 6*e2
@@ -26,5 +26,5 @@ class Solution:
         return e0
 
 
-s = "2*1"
+s = "06"
 Solution().numDecodings(s)

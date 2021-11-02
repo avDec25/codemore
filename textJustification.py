@@ -1,59 +1,26 @@
 from typing import List
-from math import floor
 
 class Solution:
-  def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
-    ans = []
-    lines = dict()
-    count = dict()
-    w = 0
-    i = 0
-    for word in words:
-      n = len(word)
-      w += n
-      if w > maxWidth:
-        w = 0
-        i += 1
-      lines[i] = lines.get(i, []) + [word]
-      count[i] = count.get(i, 0) + n
-      w += 1
+    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+        curr, num_of_letters, res = [], 0, []
+        for w in words:
+            if len(w) + num_of_letters + len(curr) > maxWidth:
+                # add spaces to words
+                for space in range(maxWidth - num_of_letters):
+                    curr[space % (len(curr)-1 or 1)] += ' '
+                
+                res.append(''.join(curr))
+                num_of_letters = 0
+                curr = []
+        
+            curr += [w]
+            num_of_letters += len(w)
     
-    print(count)
-    for i in range(len(lines)):
-      line = lines[i]
-      minSpaces = len(line) - 1
-      print("for line = {}, len = {}, minSpace = {}".format(line, len(line), minSpaces))
-      if minSpaces + count.get(i) < maxWidth:
-        if minSpaces > 1:
-          avgSpaces = (maxWidth - count[i]) / minSpaces
-          fractional = avgSpaces - floor(avgSpaces)
-          if fractional > 0:
-            avgLeftSpaces = floor((maxWidth - count[i] - floor(avgSpaces)) // (minSpaces-1))
-            avgRightSpaces = floor(avgSpaces)
-          else:
-            avgLeftSpaces = floor(avgSpaces)
-            avgRightSpaces = floor(avgSpaces)
-          print("left = {}, right = {}\n".format(avgLeftSpaces, avgRightSpaces))      
-      
-      preparedLine = ""
-      if len(line) == 1:
-        preparedLine = line[0] + " " * (maxWidth - len(line[0]))
-      else:
-        for x in range(len(line)):
-          preparedLine += line[x]
-          if x == len(line)-2:
-            preparedLine += " " * avgRightSpaces
-          elif x == len(line)-1:
-              pass
-          else:
-            preparedLine += " " * avgLeftSpaces
-      ans.append(preparedLine)
-      
-    return ans
+        return res + [' '.join(curr).ljust(maxWidth)]
 
-
-words = ["What", "must", "be", "acknowledgment", "shall", "be"]
+words = ["This", "is", "an", "example", "of", "text", "justification.", "If", "I", "add", "more", "data", "into", "this", "then", "ok"]
 maxWidth = 16
 ans = Solution().fullJustify(words, maxWidth)
-for x in ans:
-  print(x)
+print(ans)
+for line in ans:
+    print(line)
