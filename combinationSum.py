@@ -18,16 +18,17 @@ def combinations(a, k):
   return dynamic(a, k)
 
 
-# def backtrack(candidate, a, target):
-#   if target >= 0:
-#     if target == 0:
-#       global count
-#       count = count + 1
-#     else:
-#       for i in range(0, len(a)):
-#         candidate.append(a[i])f
-#         backtrack(candidate, a, target-a[i])
-#         candidate.pop()
+def backtrack(candidate, a, target):
+  if target >= 0:
+    if target == 0:
+      global count
+      count = count + 1
+    else:
+      for i in range(0, len(a)):
+        candidate.append(a[i])
+        backtrack(candidate, a, target-a[i])
+        candidate.pop()
+
 
 a = [1, 2, 4]
 k = 32
