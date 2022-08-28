@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/amar/Documents/codemore'
+python3  <in
+make: Leaving directory `/Users/amar/Documents/codemore'
+ 

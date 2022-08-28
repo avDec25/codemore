@@ -1,0 +1,286 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Sun Aug 28 10:53:05 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+NVM_INC = /Users/amar/.nvm/versions/node/v9.11.2/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+ 
+# makefile
+CURDIR := /Users/amar/Documents/codemore
+# makefile
+SHELL = /bin/sh
+# environment
+MANPAGER = /usr/bin/less -R --use-color -Ddg -Du+y
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+MAVEN_HOME = /Users/amar/.sdkman/candidates/maven/current
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+AUTOJUMP_SOURCED = 1
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/amar/.bun/bin:/Users/amar/.sdkman/candidates/maven/current/bin:/Users/amar/.sdkman/candidates/java/current/bin:/usr/local/Caskroom/miniconda/base/bin:/usr/local/Caskroom/miniconda/base/condabin:/Users/amar/.nvm/versions/node/v9.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/usr/local/opt/fzf/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SDKMAN_DIR = /Users/amar/.sdkman
+# environment
+SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
+# environment
+NVM_BIN = /Users/amar/.nvm/versions/node/v9.11.2/bin
+# environment
+LaunchInstanceID = 13D55EEB-954C-4CF5-A8F4-0DF9A27BFE54
+# environment
+SDKMAN_PLATFORM = darwinx64
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+CONFLUENT_HOME = /Users/amar/Downloads/confluent-7.1.1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.54boBisi4t/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /usr/local/Caskroom/miniconda/base/bin/conda
+# environment
+PWD = /Users/amar/Documents/codemore
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/amar
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/amar/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = amar
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
+NVM_CD_FLAGS = -q
+# environment
+ZSH = /Users/amar/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# environment
+SDKMAN_VERSION = 5.16.0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+JAVA_HOME = /Users/amar/.sdkman/candidates/java/current
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = amar
+# makefile
+.DEFAULT_GOAL := py
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CONDA_SHLVL = 1
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/ww/lntchgdx7bvd17gw7x_mw_f80000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/amar/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# environment
+BUN_INSTALL = /Users/amar/.bun
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /Users/amar/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.76601167.76601173
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+spring_profiles_active = dev
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+SDKMAN_CANDIDATES_DIR = /Users/amar/.sdkman/candidates
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+CONDA_PYTHON_EXE = /usr/local/Caskroom/miniconda/base/bin/python
+# environment
+SECURITYSESSIONID = 186a3
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+_CE_M = 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+AUTOJUMP_ERROR_PATH = /Users/amar/Library/autojump/errors.log
+# environment
+CONDA_PREFIX = /usr/local/Caskroom/miniconda/base
+# environment
+VSCODE_PID = 17217
+# environment
+_CE_CONDA = 
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=89/1024=9%, Rehash=0, Collisions=2/113=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 19254118): 277 files, no impossibilities.
+
+# 277 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pyo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 5):
+	python3 $(file)>out
+	
+
+py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 2):
+	python3 $(file) <in
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 9):
+	g++ --std=c++17 -g $(file)
+	./a.out <in
+	
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-28 19:09:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/19=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+ 
+
+# Finished Make data base on Sun Aug 28 10:53:05 2022
+
+ 
